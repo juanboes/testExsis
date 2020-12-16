@@ -1,0 +1,87 @@
+.header__header-main
+    width: 100%
+    background: $color-header-main 
+    padding: 1em
+
+
+.header__logo
+    width: 40%
+
+.header__navbar-inner
+    width: 50%    
+    ul
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        li
+            list-style-type: none
+            a
+                text-decoration: none
+                color: $color-secondary
+                font-weight: 400
+                &:hover
+                    color: $color-primary
+                    text-decoration: underline
+
+.header__navbar-outer
+    width: 100%
+    background: $color-navbar-outer
+    padding: 1em
+    ul
+        display: flex
+        flex-direction: row
+        li
+            list-style-type: none
+            margin-right: 3em
+            a
+                color: $color-secondary
+                text-decoration: none
+
+.header-movil-tablets
+    background: $color-header-main
+    color: $color-primary
+    position: relative 
+    min-height: 2em
+    padding: 1em 0 0 2.5em
+    input[type="checkbox"]
+        opacity: 0
+    input:checked ~ nav
+        display: block
+    nav
+        display: none
+    ul
+        li
+            a
+                color: $color-primary
+                text-decoration: none
+                display: block
+                padding: .8em
+                max-width: 200px
+
+.header-movil-tablets input[type="checkbox"], .header-movil-tablets .fa-bars, .header-movil-tablets .fa-times 
+  position: absolute  
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  left: .3em
+  top: .5em
+  width: 2em
+  height: 2em  
+
+ 
+.header-movil-tablets .fa-bars, .header-movil-tablets .fa-times 
+  font-size: 2em
+  pointer-events: none
+
+ 
+.header-movil-tablets input:checked ~ .fa-bars, .header-movil-tablets input:not(:checked) ~ .fa-times
+  display: none
+
+.header-navbar-movil-tablets
+    list-style-type: none
+    border-left: 2px solid $color-primary
+
+.logo-movil-tablets
+    text-align: center

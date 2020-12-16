@@ -1,0 +1,48 @@
+//Media query para ocultar header desktop en dispositivos moviles y tablets
+@media screen and (min-width: 320px) and (max-width: 1023px)
+    .header-desktop
+        display: none
+
+//Media query para móviles y tablets
+@media screen and (min-width: 320px) and (max-width: 767px)
+    .header-movil-tablets
+        ul
+            li
+                a
+                    font-size: 80%
+    .main-content__border-blue
+        display: none
+    .container-banner
+        width: 100%
+        position: relative
+    .main-content__banner-slider
+        width: 100%
+        float: none
+        img
+            width: 100%
+    .main-content__banner-form
+        width: 80%
+        float: none
+        position: absolute
+        top: 80%
+        left: 10%
+        border-top: 3px solid $color-title
+    footer
+        margin-top: 350px
+        font-size: 80%
+        ul
+            li
+                a
+                    font-size: 80%
+
+//Media query para tablets
+@media screen and (min-width: 768px) and (max-width: 1023px)
+    .main-content__border-blue
+        display: none
+    .main-content__banner-form
+        border-top: 3px solid $color-title
+
+// Media query para desktop
+@media screen and (min-width: 1024px)
+    .header-movil-tablets
+        display: none

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/09e9990dc8.js" crossorigin="anonymous"></script>
+    <title>Test Exsis</title>
+</head>
+<body>
+    <main>
+        <!-- Header Desktop -->
+        <header class="header-desktop">
+                <div class="header__header-main">
+                    <div class="container">
+                        <div class="header__logo">
+                            <img src="./assets/img/Logo.png" alt="Logo-empresa">
+                        </div>
+                        <nav class="header__navbar-inner">
+                            <ul>
+                                <li><a href="#">Acerca de nosotros</a></li>
+                                <li><a href="#">Descarga tu Poliza</a></li>
+                                <li><a href="./assets/docs/Instrucciones.pdf" download="Instrucciones (Prueba maquetador).pdf">Términos y condiciones</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <nav class="header__navbar-outer">
+                    <div class="container">
+                        <ul>
+                            <li><a href="#">Misión</a></li>
+                            <li><a href="#">Visión</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <!-- Header Móvil y tablets -->
+        <header class="header-movil-tablets">
+            <div class="logo-movil-tablets">
+                <img src="./assets/img/Logo.png" alt="Logo-empresa">
+            </div>
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+                <ul class="header-navbar-movil-tablets">
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Descarga tu Poliza</a></li>
+                    <li><a href="./assets/docs/Instrucciones.pdf" download="Instrucciones (Prueba maquetador).pdf">Términos y condiciones</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Sección principal -->
+        <section class="main-content">
+                <h1 class="main-content__title">Cotiza tu seguro automotriz</h1>
+                <p class="main-content__subtitle">¡Resultados instantáneos!</p>
+                <!-- Banner -->
+                <div class="main-content__banner">
+                    <div class="main-content__border-blue"></div>
+                    <!-- Contenedor del Slider y formulario -->
+                    <div class="container-banner">
+                        <div class="main-content__banner-slider">
+                            <img src="./assets/img/image_slider.png" alt="imagen1">
+                            <!--<img src="" alt="imagen2">-->
+                            <!--<img src="" alt="imagen3">-->
+                        </div>   
+                        <div class="main-content__banner-form">
+                            <form>
+                                <label for="marca">
+                                    Marca del auto<select name="marca" required></select>
+                                </label>
+                                <div class="form__selects-horizontal">
+                                    <label for="modelo">
+                                        Modelo del auto<select name="modelo" required></select>
+                                    </label>
+                                    <label for="year">
+                                        Año<select name="year" required></select>
+                                    </label>
+                                </div>
+                                <label for="email">
+                                    Email<input type="email" name="email" required>
+                                </label>
+                                <label for="tel">
+                                    Teléfono celular <input type="tel" name="tel" pattern="[0-9]{9}" required>
+                                </label>
+                                <button type="submit" class="btn-success">Cotizar ahora</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="footer__links">
+                    <div class="container">
+                        <ul class="footer-links__navbar">
+                            <li><a href="#">Acerca de nosotros</a></li>
+                            <li><a href="#">Descarga tu Poliza</a></li>
+                            <li><a href="./assets/docs/Instrucciones.pdf" download="Instrucciones (Prueba maquetador).pdf">Términos y condiciones</a></li>
+                        </ul>
+                        <div class="footer-links__social-networks">
+                            <p>Siguenos en nuestras redes sociales</p>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        </div>
+                    </div>
+            </div>
+            <p class="footer__copy">Copyright 2020</p>
+        </footer>
+    </main>
+</body>
+</html>
